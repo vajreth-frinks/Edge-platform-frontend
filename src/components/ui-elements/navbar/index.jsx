@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../logo";
 import { Link, NavLink } from "react-router-dom";
+import logo from "../../../assets/frinks_logo.png";
 
 const listLink = [
   {
@@ -8,7 +9,7 @@ const listLink = [
     children: "Instances",
   },
   {
-    to: "/teams",
+    to: "/PI",
     children: "Peripherals & Integrations",
   },
   {
@@ -32,10 +33,10 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-primary border-b border-sky-base h-[62px]">
       <div className="mx-auto w-full px-4 py-2">
-        <div className="flex items-center justify-between flex-wrap gap-y-2">
+        <div className="flex items-center justify-between  gap-y-2">
           <div className="flex items-center gap-4">
             <div className="flex-shrink-0 w-[130px]">
-              <Logo />
+              <Logo logo={logo}/>
             </div>
             <div className="hidden md:block">
               <div className="flex items-center gap-4">

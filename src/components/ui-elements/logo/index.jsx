@@ -1,15 +1,13 @@
 import React from "react";
 import PropTypes from "prop-types";
-import logo from "../../../assets/frinks_logo.png";
-import { Link } from "react-router-dom";
+// import logo from "../../../assets/frinks_logo.png";
 
-const Logo = (props) => {
+
+const Logo = ({logo}) => {
   return (
-    <div className="p-2 w-full flex items-center justify-center">
-      <Link to="/projects">
-        <img src={logo} className="w-full md:max-w-[408px]" alt="logo" />
-      </Link>
-    </div>
+    
+    <img src={logo} className="w-full md:max-w-[408px]" alt="logo" />
+ 
   );
 };
 

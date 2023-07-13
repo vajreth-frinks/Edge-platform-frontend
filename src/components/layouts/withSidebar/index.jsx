@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
-import {
-  ArrowLeftCircle,
-  Cpu,
-  Database,
-  Settings,
-  Tag,
-  Zap,
-} from "react-feather";
+
 import { NavLink, Outlet, useLocation, useParams } from "react-router-dom";
+import Logo from "../../ui-elements/logo";
+import logoController from "../../../assets/cpu.png"
+import logoCamera from "../../../assets/camera.svg"
+import logoHMI from "../../../assets/O.png"
+import logoTriggers from "../../../assets/airplay.png"
 
 const WithSideBar = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -18,30 +16,26 @@ const WithSideBar = () => {
 
   const menus = [
     {
-      name: "Datasets",
-      icon: <Database />,
+      name: "Controller",
+      icon:  <Logo logo={logoController}/>,
       url: `/projects/${params.projectId}`,
     },
     {
-      name: "Project Configuration",
-      icon: <Settings />,
+      name: "Camera",
+      icon: <Logo logo={logoCamera} />,
       url: `/configuration/${params.projectId}`,
     },
     {
-      name: "Annotation",
-      icon: <Tag />,
+      name: "HMI",
+      icon: <Logo logo={logoHMI} />,
       url: "/",
     },
     {
-      name: "AI Models",
-      icon: <Cpu />,
+      name: "Triggers",
+      icon: <Logo logo={logoTriggers} />,
       url: "/",
     },
-    {
-      name: "Instances",
-      icon: <Zap />,
-      url: "/",
-    },
+   
   ];
 
   const handleToggle = () => {
@@ -56,19 +50,14 @@ const WithSideBar = () => {
 
   const withClassName = isOpen ? "w-[247px]" : "w-[76px]";
   const hiddenClassName = isOpen ? "visible" : "hidden";
-  const rotateClassName = isOpen ? "" : "rotate-180";
+ 
 
   return (
     <nav className="flex h-full">
       <div
         className={`${withClassName} p-2 border-r-1 border-ink transition-all`}
       >
-        <div className="flex justify-end border-b-1 border-ink p-4 hover:bg-secondary-light transition-all ">
-          <ArrowLeftCircle
-            className={`cursor-pointer transition-all  ${rotateClassName}`}
-            onClick={handleToggle}
-          />
-        </div>
+        
 
         <ul>
           {menus.map((t) => (
