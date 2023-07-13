@@ -12,7 +12,7 @@ export const Container = ({ children }) => {
   );
 };
 
-const Project = (props) => {
+const Instance = (props) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -21,7 +21,7 @@ const Project = (props) => {
 
   return (
     <Container>
-      <Heading title="Projects" />
+      <Heading title="Instance" />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 mt-4 gap-6 flex-wrap">
         <Card.Create onClick={handleClick} />
 
@@ -72,6 +72,6 @@ const Project = (props) => {
   );
 };
 
-Project.propTypes = {};
+Instance.propTypes = {};
 
-export default Project;
+export default Instance;

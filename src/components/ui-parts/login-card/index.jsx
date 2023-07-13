@@ -25,7 +25,7 @@ const LoginCard = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(loginData);
-    navigate("/projects")
+    navigate("/instances")
   };
   return (
     <div className="flex flex-col items-center justify-center h-min">

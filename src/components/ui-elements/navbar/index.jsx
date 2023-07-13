@@ -4,43 +4,22 @@ import { Link, NavLink } from "react-router-dom";
 
 const listLink = [
   {
-    to: "/projects",
-    children: "Projects",
+    to: "/instances",
+    children: "Instances",
   },
   {
     to: "/teams",
-    children: "Teams",
+    children: "Peripherals & Integrations",
   },
   {
     to: "/analytics",
-    children: "Analytics",
+    children: "System Health Monitoring",
   },
   {
     to: "/marketplace",
-    children: "Marketplace",
+    children: "Analytics & Reports",
   },
-  {
-    to: "/download_frink_ai_edge",
-    children: (
-      <>
-        <svg
-          width="25"
-          height="25"
-          viewBox="0 0 25 25"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          stroke="currentColor"
-        >
-          <path
-            d="M8.33421 17.7083L12.5009 21.875M12.5009 21.875L16.6675 17.7083M12.5009 21.875V12.5M21.7509 18.8437C22.6565 18.2069 23.3356 17.2981 23.6897 16.2491C24.0438 15.2001 24.0544 14.0656 23.72 13.0102C23.3857 11.9548 22.7237 11.0334 21.8301 10.3797C20.9366 9.72607 19.858 9.37413 18.7509 9.37499H17.4384C17.1251 8.15403 16.5389 7.02004 15.7239 6.05841C14.9089 5.09678 13.8864 4.33255 12.7334 3.82328C11.5803 3.314 10.3268 3.07294 9.06705 3.11824C7.80734 3.16354 6.57433 3.49402 5.46083 4.08481C4.34733 4.6756 3.38236 5.51129 2.63857 6.52898C1.89478 7.54667 1.39156 8.71983 1.16677 9.96015C0.941991 11.2005 1.00151 12.4756 1.34086 13.6896C1.6802 14.9036 2.29052 16.0248 3.12588 16.9687"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-        Download Frinks AI Edge
-      </>
-    ),
-  },
+ 
 ];
 
 const Navbar = () => {

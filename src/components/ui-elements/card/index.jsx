@@ -14,7 +14,7 @@ const Create = (props) => {
       className="flex flex-col items-center justify-center border-2 rounded-[10px] border-dashed border-primary w-full min-h-[206px] transition-all cursor-pointer hover:bg-secondary"
     >
       <img src={plusIcon} alt="plus icon" />
-      <h3 className="font-bold text-primary ">Create New Project</h3>
+      <h3 className="font-bold text-primary ">Deploy New Instance</h3>
     </div>
   );
 };

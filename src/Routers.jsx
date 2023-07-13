@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import WithNavbar from "./components/layouts/withNavbar";
 import WithSideBar from "./components/layouts/withSidebar";
 import CreateInstance from "./pages/Instance/create/index";
+import Instance from "./pages/Instance/index";
 
 const Login = lazy(() => import("./pages/login/index"));
 const Register = lazy(() => import("./pages/register/index"));
@@ -18,7 +19,7 @@ function Routers() {
       <Suspense fallback={"...Loading"}>
         <Routes>
           <Route path="" element={<WithNavbar />}>
-            <Route path="/projects" element={<Project />} />
+            <Route path="/instances" element={<Instance />} />
             <Route path="/create-instance" element={<CreateInstance />} />
             <Route element={<WithSideBar />}>
            

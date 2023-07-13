@@ -3,9 +3,9 @@ import PropTypes from "prop-types";
 import clsx from "clsx";
 
 export const baseSteps = [
-  "Project Details",
-  "Database and Objective",
-  "Defect Details",
+  "Instance ID",
+  "Instance Setting",
+  "Deploy",
 ];
 
 const Steps = (props) => {

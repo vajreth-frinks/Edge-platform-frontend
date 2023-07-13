@@ -8,7 +8,7 @@ const Heading = (props) => {
   return (
     <div className="flex gap-4 items-center">
       {showIcon && <img src={saveIcon} alt="save icon" width={40} />}
-      <h1 className="font-bold text-3xl">{title}</h1>
+      <h1 className="font-bold text-5xl">{title}</h1>
     </div>
   );
 };
