@@ -6,7 +6,7 @@ import PropTypes from "prop-types";
 const Logo = ({logo}) => {
   return (
     
-    <img src={logo} className="w-full md:max-w-[408px]" alt="logo" />
+    <img src={logo} className="" alt="logo" />
  
   );
 };

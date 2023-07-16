@@ -6,7 +6,8 @@ import WithNavbar from "./components/layouts/withNavbar";
 import WithSideBar from "./components/layouts/withSidebar";
 import CreateInstance from "./pages/Instance/create/index";
 import Instance from "./pages/Instance/index";
-import PI from "./pages/PI";
+import Controller from "./pages/PI/Controller";
+import Camera from "./pages/PI/Camera";
 
 const Login = lazy(() => import("./pages/login/index"));
 const Register = lazy(() => import("./pages/register/index"));
@@ -23,8 +24,8 @@ function Routers() {
             <Route path="/instances" element={<Instance />} />
             <Route path="/create-instance" element={<CreateInstance />} />
             <Route element={<WithSideBar />}>
-            <Route  path="/PI" element={<PI/>}/>
-           
+            <Route  path="/PI/controller" element={<Controller/>}/>
+            <Route  path="/PI/camera" element={<Camera/>}/>
               
             </Route>
           </Route>

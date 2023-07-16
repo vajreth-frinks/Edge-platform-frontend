@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { NavLink, Outlet, useLocation, useParams } from "react-router-dom";
+
 import Logo from "../../ui-elements/logo";
 import logoController from "../../../assets/cpu.png"
 import logoCamera from "../../../assets/camera.svg"
@@ -18,7 +19,7 @@ const WithSideBar = () => {
     {
       name: "Controller",
       icon:  <Logo logo={logoController}/>,
-      url: `/projects/${params.projectId}`,
+      url: `/PI/controller`,
     },
     {
       name: "Camera",
@@ -65,13 +66,13 @@ const WithSideBar = () => {
               to={t.url}
               key={t.name}
               className={({ isActive, isPending }) => {
-                let className = "hover:bg-secondary-light transition-all flex";
+                let className = "hover:bg-primary-lighter transition-all flex";
 
                 if (isPending) {
                   className += " pending";
                 }
                 if (isActive) {
-                  className += " bg-secondary-light";
+                  className += " bg-primary-lighter";
                 }
 
                 return className;

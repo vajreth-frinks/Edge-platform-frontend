@@ -11,10 +11,12 @@ export default {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+   
       colors: {
         primary: "#5538EE",
 
         "primary-light": "#6B4EFF",
+        "primary-lighter":"#C6C4FF",
 
         secondary: "#C6C4FF",
 

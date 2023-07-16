@@ -9,7 +9,7 @@ const listLink = [
     children: "Instances",
   },
   {
-    to: "/PI",
+    to: "/PI/controller",
     children: "Peripherals & Integrations",
   },
   {
